@@ -23,7 +23,7 @@ public class ColorObstacleMovement : MonoBehaviour
         transform.position = temp;
 
         if (transform.position.y < offCameraPointVerticalAxis) {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }
